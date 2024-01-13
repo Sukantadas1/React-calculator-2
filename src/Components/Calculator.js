@@ -13,7 +13,7 @@ const Calculator = () => {
       isNaN(Number(num1)) ||
       isNaN(Number(num2))
     ) {
-      setErrorMessage("Invalid input. Please enter valid numbers.");
+      setErrorMessage("Num 1 Cannot Be Empty");
       return false;
     }
 
@@ -54,13 +54,13 @@ const Calculator = () => {
     <div className="calculator-container">
       <input
         type="text"
-        placeholder="Enter number 1"
+        placeholder="Num 1"
         value={num1}
         onChange={(e) => setNum1(e.target.value)}
       />
       <input
         type="text"
-        placeholder="Enter number 2"
+        placeholder="Num 2"
         value={num2}
         onChange={(e) => setNum2(e.target.value)}
       />
